@@ -14,6 +14,10 @@ class Shape(ABC):
         @abstractmethod
         def get_perimeter(self):
             pass
+        
+        @abstractmethod
+        def display_info(self):
+            pass
 
         
         
