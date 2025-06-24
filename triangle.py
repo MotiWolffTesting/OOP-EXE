@@ -14,7 +14,7 @@ class Triangle(Rectangle):
         return 0.5 * self.width * self.height
     
     def get_perimeter(self):
-        
+        # Currently working only with isosceles triangles
         side = sqrt((self.width / 2) ** 2 + self.height ** 2)
         return self.width + 2 * side
     
