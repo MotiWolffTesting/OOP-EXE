@@ -14,5 +14,5 @@ class Rectangle(Shape):
     def get_perimeter(self):
         return 2 * (self.width + self.height)
     
-    def display_info(self):
+    def __str__(self):
         return f"Rectangle (width={self.width}, height={self.height}): Area={self.get_area():.2f}, Perimeter={self.get_perimeter():2f}"

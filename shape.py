@@ -15,9 +15,11 @@ class Shape(ABC):
         def get_perimeter(self):
             pass
         
-        @abstractmethod
-        def display_info(self):
-            pass
+        
+        def __str__(self):
+            return f"{self.name}: Area={self.get_area():.2f}, Perimeter={self.get_perimeter():.2f}"
+
+            
 
         
         
