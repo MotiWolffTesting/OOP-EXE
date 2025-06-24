@@ -4,7 +4,7 @@ class Rectangle(Shape):
     def __init__(self, width, height):
         if width <= 0 or height <= 0:
             raise InvalidDimensionError("Width and height must be positive numbers.")
-        super.__init__("Rectangle")
+        super().__init__("Rectangle")
         self.width = width
         self.height = height
         
