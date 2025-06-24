@@ -8,6 +8,6 @@ class Square(Rectangle):
         super().__init__(side, side)
         self.name = "Square"
         
-    def display_info(self):
+    def __str__(self):
         return f"Square (side={self.width}): Area={self.get_area():.2f}, Perimeter={self.get_perimeter():.2f}."
 

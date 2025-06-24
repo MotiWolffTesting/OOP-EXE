@@ -18,5 +18,5 @@ class Triangle(Rectangle):
         side = sqrt((self.width / 2) ** 2 + self.height ** 2)
         return self.width + 2 * side
     
-    def display_info(self):
+    def __str__(self):
         return f"Triangle(base={self.width}, height={self.height}): Area={self.get_area():.2f}, Perimeter={self.get_perimeter():.2f}"

@@ -15,5 +15,5 @@ class Circle(Shape):
     def get_perimeter(self):
         return 2 * pi * self.radius
     
-    def display_info(self):
+    def __str__(self):
         return f"Circle(radius={self.radius}): Area={self.get_area():.2f}, Perimeter={self.get_perimeter():.2f}"
